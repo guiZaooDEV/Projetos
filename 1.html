@@ -11,8 +11,19 @@
         }
 
         #churras{/*seletor por id*/
-            background-color: aquamarine;
+            background-color: rgb(255, 255, 255);
         }
+        table,td,th{
+            border: 2px solid black;
+            border-collapse: collapse;
+            border-width: 2px
+        }
+        #pda:hover{
+            color:brown;
+            background-color: bisque;
+            font-style:italic;
+        }
+
     </style>
 </head>
 <body>
@@ -28,7 +39,40 @@
             <li>Edson</li>
             <li>Hudson</li>
         </ol>
+        <table>
+            <tr>
+                <td rowspan="6"> Churrasco </td>
+                <th>Item</th>
+                <th>Unidade</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>Carne</td>
+                <td>2kg</td>
+                <td>36,00</td>
+            </tr>
+            <tr>
+                <td id="pda">Pão de Alho</td>
+                <td>2pct</td>
+                <td>15,90</td>
+            </tr>
+            <tr>
+                <td>Chopp</td>
+                <td>1 Barril</td>
+                <td>150,00</td>
+            </tr>
+            <tr>
+                <td>Linguiça</td>
+                <td>1kg</td>
+                <td>20,00</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>210,00</td>
+            </tr>
+        </table>
     </div>
+
     
 
 </body>
